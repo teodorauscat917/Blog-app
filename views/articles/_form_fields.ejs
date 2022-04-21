@@ -1,0 +1,26 @@
+<!-- Title -->
+<div class="form-group">
+  <label for="title">Title</label>
+  <!-- The input field: styled with form-control & is required for submitting-->
+  <input value="<%=article.title%>" required  class="form-control" type="text" name="title" id="title" value="">
+
+</div>
+
+
+
+<!-- Description -->
+<div class="form-group">
+  <label for="description">Description</label>
+  <textarea name="description" id="description" class="form-control" rows="3" cols="80"> <%=article.description%></textarea>
+
+</div>
+
+<!-- Markdown -->
+<div class="form-group">
+  <label for="markdown">Markdown</label>
+  <textarea required name="markdown" id="markdown" class="form-control" rows="8" cols="80"> <%=article.markdown%></textarea>
+
+</div>
+
+<a href="/" class="btn btn-secondary">Cancel</a>
+<button type="submit" class="btn btn-primary">Submit</button>
